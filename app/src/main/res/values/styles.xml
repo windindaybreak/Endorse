@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#0fff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="LinearLayoutTheme" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:state_pressed">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="Dialog_Full">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <declare-styleable name="CakeSurfaceView">//饼状图
+        <attr name="isDrawByAnim" format="boolean"/>//是否动画
+        <attr name="isSolid" format="boolean"/>//是否立体
+        <attr name="duration" format="integer|reference"/>//动画时间
+        <attr name="defaultColor" format="string"/>//默认颜色
+        <attr name="ringWidth" format="integer|reference"/>//圆环宽度
+        <attr name="solidWidth" format="integer|reference"/>//立体宽度
+        <attr name="fineTuningWidth" format="integer|reference"/>//微调宽度
+    </declare-styleable>
+
+</resources>

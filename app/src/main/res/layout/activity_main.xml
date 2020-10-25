@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@mipmap/backa"
+        android:layout_alignParentTop="true"
+        android:id="@+id/TopBackGround"/>
+
+
+    <EditText
+        android:id="@+id/EtNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="账号"
+        android:layout_below="@+id/TopBackGround"
+        android:layout_centerHorizontal="true"
+        android:digits="0123456789"
+        android:maxLines="1"/>
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/EtPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:layout_alignRight="@+id/EtNumber"
+        android:layout_below="@+id/EtNumber"
+        android:maxLines="1"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:inputType="textPassword"/>
+
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_marginTop="10dp"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="忘记密码"
+        android:textColor="#00A0C8"
+        android:layout_below="@+id/EtPassword"
+        android:layout_alignLeft="@+id/EtPassword"
+        android:clickable="true"
+        android:focusable="true"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="工号登陆"
+        android:textColor="#00A0C8"
+        android:layout_alignRight="@+id/EtPassword"
+        android:layout_below="@+id/EtPassword"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/BtnLogin"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="登录"
+        android:background="@drawable/loginbtn"
+        android:layout_below="@+id/forget"
+        android:layout_alignRight="@+id/EtPassword" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/EtPassword"
+        android:layout_alignRight="@+id/EtPassword"
+        android:layout_alignBottom="@+id/EtPassword"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/eye"
+        android:id="@+id/eye"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/EtNumber"
+        android:layout_alignBottom="@+id/EtNumber"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ImageUser"
+        android:background="@drawable/user"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/EtPassword"
+        android:layout_alignBottom="@+id/EtPassword"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ImagePassword"
+        android:background="@drawable/pass"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/logo" />
+
+</RelativeLayout>

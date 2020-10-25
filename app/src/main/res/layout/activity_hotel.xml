@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E3E3"
+    tools:context=".Hotel">
+
+    <TextView
+        android:id="@+id/HotelTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="#51A9F3"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="酒店"
+        android:textSize="25sp" />
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/Hotel广告"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/HotelTitle" />
+
+    <LinearLayout
+        android:id="@+id/HotelDiDian"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Hotel广告"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="北京"
+            android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/mylocation"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="我的位置"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/HotelShiJian"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/HotelDiDian"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="入住" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/seven" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="离店" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/HotelGuanJianCi"
+        android:layout_below="@id/HotelShiJian"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+           android:layout_marginLeft="30dp"
+            android:hint="关键词/位置/品牌/酒店名"
+            android:layout_marginRight="30dp"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:background="@drawable/right"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xingji"
+        android:layout_below="@id/HotelGuanJianCi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:hint="价格合规，星级不限"
+            android:layout_marginRight="30dp"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:background="@drawable/right"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ruzhuren"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/xingji"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="入住人"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_marginRight="20dp"
+            android:hint="填入姓名"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/inquiry"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="查询"
+        android:layout_below="@+id/ruzhuren"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

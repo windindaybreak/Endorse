@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RemainAcount">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="14dp"
+            android:layout_height="24dp"
+            android:background="@drawable/backb"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000001"
+            android:layout_marginRight="10dp"
+            android:text="零钱明细"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/yue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:textColor="#000001"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="我的零钱"
+        />
+
+    <TextView
+        android:id="@+id/yue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="0元"
+        android:textColor="#000001"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal"
+        android:textColor="#D7FFC107"
+        android:layout_gravity="center_horizontal"
+        android:text="转入前金额所赚收益，年化利率为余额宝的三倍"/>
+
+
+
+    <Button
+        android:id="@+id/tixian体现"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:background="@drawable/btnbackgroundtixian"
+        android:text="提现"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp"/>
+
+</LinearLayout>

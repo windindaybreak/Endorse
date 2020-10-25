@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Fragment.ZhaoDai">
+
+    <!--招待费申请界面-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/MyHelpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="招待费申请"
+            android:textColor="#000001"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="14dp"
+            android:layout_height="24dp"
+            android:background="@drawable/backb"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="来访人员信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="级别"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_级别"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7"
+            android:hint="请输入来访人员级别"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="人数"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_人数"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7"
+            android:inputType="number"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="接待安排" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="接待时间"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起始时间："
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/Datefrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:drawable/edit_text"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间："
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/Dateto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:drawable/edit_text"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="接待地点"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_接待地点"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7"
+            android:hint="请输入接待地点"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="接待内容"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_接待内容"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7"
+            android:hint="（必填）"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="是否用车"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_用车"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7"
+            android:hint="是或否"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="租车费"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_租车费"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7"
+            android:hint="请填入数额"
+            android:inputType="number"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="餐饮费"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_餐饮费"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7"
+            android:hint="请填入数额"
+            android:inputType="number"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="住宿费"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_住宿费"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7"
+            android:hint="请填入数额"
+            android:inputType="number"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="预计总金额"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_总金额"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7"
+            android:hint="请填入数额（必填）"
+            android:inputType="number"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="备注"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_补充说明"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7"
+            android:hint="请输入备注"
+            android:maxLines="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btngroup_zhaodai_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_zhaodai_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+
+        <Button
+            android:id="@+id/Btn_zhaodai_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btngroup_zhaodai_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/Btn结束行程"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束行程" />
+
+        <Button
+            android:id="@+id/Btn追加预算"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="追加预算" />
+
+        <Button
+            android:id="@+id/Btn快速报销"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速报销" />
+
+    </LinearLayout>
+
+</LinearLayout>

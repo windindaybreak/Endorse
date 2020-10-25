@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E3E3"
+    tools:context=".Plane">
+
+    <TextView
+        android:id="@+id/PlaneTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="飞机票"
+        android:textSize="22sp" />
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/Plane广告"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/PlaneTitle" />
+
+    <LinearLayout
+        android:id="@+id/PlaneDanCheng"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/Plane广告"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="单程"
+            android:textSize="28dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="往返"
+            android:textSize="28dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PlaneDiDian"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/PlaneDanCheng"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="出发城市" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/fanzhuan" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="到达城市" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PlaneDate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/PlaneDiDian"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="去程日期" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chuxingren"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/PlaneDate"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="出行人" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_weight="7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jingjicang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/chuxingren"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="经济舱" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/inquiry"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/jingjicang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="查询"
+        android:textSize="20dp" />
+
+</RelativeLayout>

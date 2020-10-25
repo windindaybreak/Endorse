@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".zhuangtai">
+
+    <RelativeLayout
+        android:id="@+id/layout_我的"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/MyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:background="#51A9F3"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="提交状态"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/ButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MyTitle"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/WeiRefer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00111111"
+                android:text="未提交"
+                android:textColor="#8F03A9F4"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/YiRefer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00111111"
+                android:text="已提交"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/YiShenHe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00111111"
+                android:text="已审核"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/ButtonLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/empty" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/MyTitle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back" />
+
+        <ListView
+            android:id="@+id/余额"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ButtonLayout"
+            android:gravity="center"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

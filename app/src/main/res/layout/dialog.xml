@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/差旅追加预算"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/路费追加"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="路费追加" />
+
+        <EditText
+            android:id="@+id/住宿费追加"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="住宿费追加" />
+
+        <EditText
+            android:id="@+id/餐饮费追加"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="餐饮费追加" />
+
+        <EditText
+            android:id="@+id/交通费追加"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="交通费追加" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Btn提交追加"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交" />
+
+            <Button
+                android:id="@+id/Btn取消追加"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_zhaodai_追加预算"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/Et_zhaodai_追加预算_租车费追加"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="租车费追加"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_追加预算_住宿费追加"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="住宿费追加"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_追加预算_餐饮费追加"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="餐饮费追加"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/Et_zhaodai_追加预算_总金额追加"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="总金额追加"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/Btn_zhaodai_追加预算_提交"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交" />
+
+            <Button
+                android:id="@+id/Btn_zhaodai_追加预算_取消"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_peixun_追加预算"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/Et_peixun_追加预算"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="培训费预算追加"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Btn_peixun_快速报销_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交" />
+
+            <Button
+                android:id="@+id/Btn_peixun_快速报销_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_caigou_追加预算"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/Et_caigou_追加预算"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="采购费预算追加"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Btn_caigou_submit_追加预算"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交" />
+
+            <Button
+                android:id="@+id/Btn_caigou_cancel_追加预算"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_zixun_追加预算"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/Et_zixun_追加预算"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="咨询费预算追加"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Btn_zixun_submit_追加预算"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交" />
+
+            <Button
+                android:id="@+id/Btn_zixun_cancel_追加预算"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">shell</string>
+    <string name="title_activity_after_entering">AfterEntering</string>
+    <string name="title_home">主页</string>
+    <string name="title_qiye">合作企业</string>
+    <string name="title_zhangdan">账单</string>
+    <string name="title_activity_hezuoqiye">hezuoqiye</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="company_name">公司名称</string>
+    <string name="bill_number">0￥</string>
+    <string name="task_number">0条</string>
+    <string name="task_text">申请事项</string>
+    <string name="fapiao">发票报销</string>
+    <string name="title_activity_che_liang">CheLiang</string>
+</resources>

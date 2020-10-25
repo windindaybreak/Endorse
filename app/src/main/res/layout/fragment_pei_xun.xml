@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Fragment.PeiXun">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/MyHelpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="培训费申请"
+            android:textColor="#000001"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="14dp"
+            android:layout_height="24dp"
+            android:background="@drawable/backb"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="培训费申请"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="培训机构名称"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_peixun_培训机构"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入培训机构"
+            android:layout_weight="7"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="培训日期"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起始时间："
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/Datefrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:drawable/edit_text"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间："
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/Dateto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:drawable/edit_text"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="课程相关"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="授课方式"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_peixun_授课方式"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入授课方式"
+            android:layout_weight="7"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="授课地点"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_peixun_授课地点"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入授课地点"
+            android:layout_weight="7"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="培训预算"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_peixun_培训预算"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入培训预算"
+            android:layout_weight="7"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="培训内容"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_peixun_培训内容"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入培训内容"
+            android:layout_weight="7"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="其他信息"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="考核形式"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_peixun_考核形式"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入考核形式"
+            android:layout_weight="7"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="备注"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Et_peixun_备注"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入备注    "
+            android:layout_weight="7"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Btngroup_peixun_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_peixun_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+
+        <Button
+            android:id="@+id/Btn_peixun_提交"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Btngroup_peixun_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/Btn_peixun_追加预算"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="追加预算" />
+
+        <Button
+            android:id="@+id/Btn_peixun_结束行程"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束行程" />
+
+        <Button
+            android:id="@+id/Btn_peixun_快速报销"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速报销" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
